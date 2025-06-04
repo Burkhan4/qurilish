@@ -5,13 +5,13 @@ from drf_yasg import openapi
 from rest_framework.permissions import AllowAny
 
 schema_view = get_schema_view(
-    openapi.Info(
-        title="Qurilish Lug'at API",
-        default_version='v1',
-        description="Qurilish atamalari lug'atining API hujjati",
-    ),
-    public=True,
-    permission_classes=(AllowAny,),
+   openapi.Info(
+      title="API hujjatlar",
+      default_version='v1',
+      description="Swagger hujjatlar",
+   ),
+   public=True,
+   permission_classes=[AllowAny],
 )
 
 urlpatterns = [
