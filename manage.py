@@ -2,6 +2,11 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import psycopg2
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 
 
 def main():
